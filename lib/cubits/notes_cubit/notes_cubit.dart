@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:notesapp/constants.dart';
@@ -12,5 +13,6 @@ class NotesCubit extends Cubit<NotesState> {
     var notesBox = Hive.box<dynamic>(kNotesBox);
 
     notes = notesBox.values.cast<NoteModel>().toList();
+    emit(NotesSuccess());
   }
 }

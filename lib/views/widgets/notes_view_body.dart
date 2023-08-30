@@ -18,8 +18,9 @@ class _ViewNotesBodyState extends State<ViewNotesBody> {
     super.initState();
   }
 
+  @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
@@ -27,6 +28,7 @@ class _ViewNotesBodyState extends State<ViewNotesBody> {
             height: 50,
           ),
           CustomAppBar(
+            onTap: () {},
             icon: Icons.search,
             title: "Notes",
           ),
