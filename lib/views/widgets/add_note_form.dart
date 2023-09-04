@@ -54,6 +54,9 @@ class _AddNoteFormState extends State<AddNoteForm> {
             height: 50,
           ),
           ColorListView(),
+          SizedBox(
+            height: 50,
+          ),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
               return CustomButton(
@@ -94,4 +97,3 @@ class _AddNoteFormState extends State<AddNoteForm> {
     return formattedCurrentDate;
   }
 }
-
