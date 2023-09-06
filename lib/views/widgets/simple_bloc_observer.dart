@@ -8,7 +8,9 @@ class SimpleBlocObserver implements BlocObserver {
   }
 
   @override
-  void onClose(BlocBase bloc) {}
+  void onClose(BlocBase bloc) {
+  
+  }
 
   @override
   void onCreate(BlocBase bloc) {}
